@@ -1,0 +1,25 @@
+---
+title: "A Gentle Start"
+subtitle: "Understanding Machine Learning · Ch.2"
+date: 2026-09-28
+categories: [UML]
+book: "Understanding Machine Learning"
+chapter: 2
+status: 읽는 중
+---
+
+## 한 줄 요약
+
+> (작성 예정)
+
+## 왜 필요한가
+
+## 핵심 개념
+
+## 코드로 확인
+
+## 헷갈린 점·질문
+
+## 연습문제
+
+## 다음에 볼 것

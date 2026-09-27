@@ -1,0 +1,16 @@
+---
+title: "마르코의 AI 공부노트"
+listing:
+  contents:
+    - notes/**/*.qmd
+    - posts/**/*.qmd
+  sort: "date desc"
+  type: table
+  fields: [date, title, categories]
+  max-items: 10
+  feed: true
+---
+
+ML·DL·AI 교재를 읽으며 남기는 노트. 교재별 노트는 [교재 노트](notes/index.qmd), 그 밖의 글은 [블로그](posts/index.qmd)에 있다.
+
+## 최근 글

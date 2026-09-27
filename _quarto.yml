@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!books/"
+
+lang: ko
+# 한국어 기본 날짜("2026. 9. 28.")가 목록 페이지에서 번호 목록으로 잘못 읽혀 페이지가 깨진다 (Quarto 1.10.18)
+date-format: "YYYY-MM-DD"
+
+website:
+  title: "마르코의 AI 공부노트"
+  site-url: https://marcoyou.github.io/learn-ML-DL-AI/
+  repo-url: https://github.com/MarcoYou/learn-ML-DL-AI
+  repo-actions: [source, issue]
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: 홈
+      - href: notes/index.qmd
+        text: 교재 노트
+      - href: posts/index.qmd
+        text: 블로그
+      - href: books.qmd
+        text: 교재 목록
+    right:
+      - icon: github
+        href: https://github.com/MarcoYou/learn-ML-DL-AI
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    html-math-method: katex
+    code-fold: show
+    code-copy: true
+    code-tools: true
+    callout-appearance: simple
+    crossref:
+      eq-prefix: 식
+      fig-prefix: 그림
+      thm-prefix: 정리
+      def-prefix: 정의
+
+execute:
+  freeze: auto

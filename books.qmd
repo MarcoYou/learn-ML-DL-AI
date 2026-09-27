@@ -1,33 +1,6 @@
-# learn-ML-DL-AI
-
-마르코의 AI 공부노트. ML·DL·AI 무료 공개 교재 목록과 학습 노트.
-
-## 블로그
-
-[Quarto](https://quarto.org) 웹사이트로 만들어 GitHub Pages에 올린다 → https://marcoyou.github.io/learn-ML-DL-AI/
-
-| 위치 | 내용 |
-|---|---|
-| `notes/<교재>/chXX-*.qmd` | 교재·장별 노트. `notes/_template.qmd`를 복사해서 시작 |
-| `posts/<날짜-제목>/index.qmd` | 그 밖의 글 |
-| `books.qmd` | 교재 목록 페이지 |
-
-```bash
-quarto preview          # 로컬 미리보기 (Quarto 1.10 + requirements.txt)
-```
-
-main에 올리면 `.github/workflows/publish.yml`이 빌드·배포한다. 처음 한 번 저장소 Settings → Pages → Source를 **GitHub Actions**로 바꿔야 한다.
-코드가 있는 노트는 로컬에서 렌더링한 뒤 생기는 `_freeze/`를 함께 커밋하면 CI가 코드를 다시 실행하지 않는다.
-
-## 교재 받기
-
-```bash
-./scripts/download.sh   # 원 저자 사이트에서 books/ 로 내려받음
-```
-
-> PDF는 **커밋하지 않는다** (`.gitignore`). 대부분 저자가 "개인 학습용 무료, 재배포 금지" 조건으로 공개했고 이 저장소는 공개 저장소다. 목록·링크·노트만 올린다.
-
-## 목록
+---
+title: "교재 목록"
+---
 
 원 게시글(LinkedIn)의 제목과 실제 링크 대상이 다른 항목이 있어 **실제 책 기준**으로 적었다.
 
@@ -45,3 +18,6 @@ main에 올리면 `.github/workflows/publish.yml`이 빌드·배포한다. 처�
 | 10 | Advanced Data Analysis from an Elementary Point of View | Cosma Shalizi | Advanced Data Analysis | [PDF](https://stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf) |
 
 참고: 게시글의 Haykin *Neural Networks and Learning Machines*, Murphy *ML: A Probabilistic Perspective*는 공식 무료 PDF가 없다. Murphy의 후속작 *Probabilistic Machine Learning* 1·2권은 [probml.github.io](https://probml.github.io/pml-book/)에서 무료로 공개돼 있다.
+
+
+교재 PDF는 저장소를 받은 뒤 `./scripts/download.sh`로 내려받는다 (재배포 금지 조건 때문에 저장소에는 PDF를 올리지 않는다).
