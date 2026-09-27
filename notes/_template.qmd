@@ -1,0 +1,68 @@
+---
+title: "장 제목"
+subtitle: "교재명 · Ch.N"
+date: 2026-01-01
+categories: [교재 약칭]          # 예: UML, MML, PDLT
+book: "Understanding Machine Learning"
+chapter: 2
+status: 읽는 중                  # 읽는 중 / 정리 완료 / 복습 필요
+---
+
+## 한 줄 요약
+
+> 이 장이 말하려는 것을 한 문장으로.
+
+## 왜 필요한가
+
+이 개념이 없으면 무엇이 안 되는지, 앞 장과 어떻게 이어지는지 쉬운 말로.
+
+## 핵심 개념
+
+::: {#def-example}
+## 정의 이름
+정의를 적는다.
+:::
+
+$$
+\text{핵심 식} \quad f(x) = \sum_i w_i x_i
+$$ {#eq-main}
+
+@eq-main 은 ...
+
+::: {#thm-example}
+## 정리 이름
+정리를 적는다.
+:::
+
+## 코드로 확인
+
+```{python}
+#| label: fig-example
+#| fig-cap: "예시 그림"
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-3, 3, 200)
+plt.plot(x, np.tanh(x))
+plt.show()
+```
+
+## 헷갈린 점·질문
+
+::: {.callout-warning}
+## 헷갈린 점
+처음에 잘못 이해한 부분과 바로잡은 이해.
+:::
+
+- [ ] 아직 풀리지 않은 질문
+
+## 연습문제
+
+::: {.callout-tip collapse="true"}
+## 문제 N.M 풀이
+풀이.
+:::
+
+## 다음에 볼 것
+
+- 이어지는 장, 관련 교재 절

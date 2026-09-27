@@ -1,0 +1,11 @@
+---
+title: "교재 노트"
+listing:
+  contents: "**/*.qmd"
+  sort: ["categories", "date"]
+  type: table
+  fields: [categories, title, date]
+  categories: true
+---
+
+교재·장별 노트. 새 노트는 `notes/_template.qmd`를 복사해 `notes/<교재 폴더>/chXX-주제.qmd`로 만든다.

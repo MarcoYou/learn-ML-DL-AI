@@ -1,2 +1,7 @@
 books/*.pdf
 books/*.part
+_site/
+.quarto/
+**/*.quarto_ipynb
+
+/.quarto/
